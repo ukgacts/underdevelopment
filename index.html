@@ -47,6 +47,7 @@
 
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
     <script async custom-element="amp-iframely" src="https://cdn.ampproject.org/v0/amp-iframely-0.1.js"></script>
+    <script async custom-element="amp-google-document-embed" src="https://cdn.ampproject.org/v0/amp-google-document-embed-0.1.js"></script>
 
 
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
@@ -106,7 +107,15 @@
 }
 
   
+.beige {
+            background-image: linear-gradient(rgba(243, 240, 237, 1), rgba(243, 240, 237, 1));
 
+        }
+
+
+        .black {  
+            background: black; 
+        }
 
         .caption-top h3 {
 
@@ -698,7 +707,10 @@ mask-size: 0.75rem;
 
         .attachment_infobox {
             padding-top: 1em;
+            
         }
+
+ 
 
         .attachment_infobox_photo-wrapper {
             display: flex;
@@ -710,8 +722,7 @@ mask-size: 0.75rem;
         .attachment_infobox_photo-wrapper amp-img {
 
             place-self: center;
-            border-radius: 12%;
-            margin-top: 1rem;
+    
             width: 160px;
             height: 160px;
         }
@@ -721,12 +732,17 @@ mask-size: 0.75rem;
             color: black;
             font-family: Roboto, Arial, sans-serif;
             
-            font-size: 0.875rem;
-            letter-spacing: -.018em;
-            line-height: 140%;
-            font-weight: 400;
+           
+          
+         
         }
 
+        .attachment_supporting-text p {
+            font-size: 0.875rem;
+            font-weight: 400;
+            margin: 0;
+  line-height: 140%;
+        }
 
    
 
@@ -1011,8 +1027,8 @@ footer a {
             padding: 0;
             padding-bottom: 1.666em;
             margin-bottom: 0;
-            margin-top: 1.888em;
-            justify-content: flex-start;
+         
+            justify-content: center;
   flex-wrap: wrap;
 
         }
@@ -1181,7 +1197,7 @@ p:after{
             <amp-story-grid-layer template="fill">
 
 
-                <amp-img src="assets/images/cover.jpg" width="720" height="1280" layout="responsive">
+                <amp-img src="assets/images/cover.jpg" width="250" height="189" layout="responsive">
                 </amp-img>
 
             </amp-story-grid-layer>
@@ -1190,21 +1206,21 @@ p:after{
             <amp-story-grid-layer template="vertical">
 
                 <figure style=" top: 8%;
-                max-width: 170px;
+                max-width: 140px;
                 right: 4%;
                 position: absolute;">
                 <amp-img src="assets/logo.png" width="643" height="485" layout="responsive"
-                    style="">
+                    >
                 </amp-img>
 
             </figure>
 
 
-            <figure style=" bottom: 4%;
-            max-width: 270px;
-            left: 4%;
+            <figure style=" top: 26%;
+            max-width: 114px;
+            right: 4%;
             position: absolute;">
-            <amp-img src="assets/images/presskit.png" width="1895" height="332" layout="responsive"
+            <amp-img src="assets/images/presskit.png" width="200" height="35" layout="responsive"
                 style="">
             </amp-img>
 
@@ -1213,28 +1229,20 @@ p:after{
         </figure>
 
 
+        <figure style=" 
+        bottom: 4%;
+  max-width: 235px;
+  right: 4%;
+  position: absolute;">
+        <amp-img src="assets/images/tagline.png" width="200" height="35" layout="responsive"
+            style="">
+        </amp-img>
 
-        
-        <a href="https://www.youtube.com/hashtag/porijazz" 
-            
-        data-tooltip-icon="assets/images/youtube-icon.png"
-      
-         class="source-btn right"                  
-        
 
-         style="margin-bottom: 20rem; top: 20vw;
-         position: relative;
-         left: 68%;"
-        >
-            <amp-img src="assets/images/icons/barcode.png" height="80px" width="80px" layout="fixed" class="center"
-            animate-in="pulse"
-        
-           >
-            </amp-img>  
 
-          
-         </span> 
-        </a>
+    </figure>
+        
+ 
 
         </amp-story-grid-layer>
 
@@ -1252,10 +1260,408 @@ p:after{
         </amp-story-page>
 
 
+        
+        <amp-story-page id="slide2">
 
-                  <!---- 2Page-->
 
-                  <amp-story-page id="slide2">
+
+
+            <amp-story-grid-layer template="fill"  style="padding: 8px;">
+                
+            
+
+
+                    <amp-img src="assets/images/slide2.jpg" width="720" height="1280" layout="responsive">
+                    </amp-img>
+
+                   
+    
+                </amp-story-grid-layer>
+
+
+
+
+
+
+                <amp-story-grid-layer template="vertical">
+
+                    <figure style=" 
+                    bottom: 24%;
+                max-width: 200px;
+                left: 4%;
+                position: absolute;">
+                    <amp-img src="assets/images/quote.png" width="363" height="297" layout="responsive"
+                        style="">
+                    </amp-img>
+                
+                
+                
+                </figure>
+    
+                
+    </amp-story-grid-layer>
+         
+
+    <amp-story-page-attachment layout="nodisplay" theme="light" title="Profile Page" class="attachment;"   
+    cta-image="assets/images/avatar-icon.jpg"   cta-text="To Artist Profile "           
+    >
+
+
+
+          <div class="attachment_infobox beige pr1 pl1 pb2">
+
+
+
+              <div class="attachment_infobox_photo-wrapper" style="height: 140px;">
+
+
+                  <amp-img src="assets/images/avatar.jpg" width="160" height="160" layout="fixed">
+                  </amp-img>
+                  <div style="padding: 0 0.938rem; display: flex;
+  flex-direction: column; flex-direction: column;
+  justify-content: space-between;
+  height: 100%; margin-top: 20px;">
+
+  <div> <p class="text-small" style="display: block;
+    margin: 0;
+      margin-bottom: 0px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    line-height: 125%;
+    font-weight: 600;
+    margin-bottom: 0.313rem;"> International Dj/ Producer</p>
+      <h5 style="font-size: 1.25rem;
+      line-height: 100%;
+     margin: 0;">SuperStyle Deluxe</h5> </div>
+                   
+                     
+                     <div class="item" style="
+                     align-items: center;">  
+      <span> 
+      
+      
+                        <svg role="img" viewBox="0 0 24 24" width="22" height="22" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <title>Spotify </title>
+                            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
+                            </path>
+                        </svg>
+      
+                     </span>
+                        <span style="font-weight: 500;
+                        font-size: 0.75rem;
+                        line-height: 125%;
+                         letter-spacing: .42px;
+                      "> 
+                    
+                            
+                            28.2 Spotify Monthly Listeners
+                          
+      
+                            <br>
+                 </span>
+      
+                         </div>
+
+
+
+
+                  </div>
+
+
+                  
+              </div>
+
+              <div class="infobox-data">
+
+      
+
+                   <div class="item" style="display: flex;
+                   align-items: center; flex-direction: row; column-gap: 1.25rem;
+                   ">  
+
+<div style="align-items: center;
+flex-direction: column;
+text-align: CENTER;
+
+display: flex;"> 
+<span style="letter-spacing: 0.9px;
+line-height: 100%;
+font-size: 70px;
+font-weight: 800;">UK
+
+
+
+</span>
+
+
+
+</div>                                     <span>
+    Hailing form the UK, Dance floor Takeovers  with killer productions and top-tier DJ skills, Scratchin & Basslines = WIN!
+</span>
+
+
+</div>
+
+
+
+              </div>
+
+
+
+          </div>
+
+     
+      <div class="attachment_bg-grey ">
+          <div class="attachment_supporting-text pr1 pl1 pb1">
+
+            <h4 style="font-size: 1rem;
+            text-transform: uppercase;
+            line-height: 110%; margin: 0 0 20px;
+          ">Biography</h4>
+
+         <p>
+            SuperStyleDeluxe first emerged in the late '90s as a rising DJ talent in the West Midlands. Honed his skills crafting mixtapes and rocking the decks at the legendary Stump Juice nightclub in Wolverhampton, where the name "SuperStyleDeluxe" was born and quickly stuck.
+        </p>
+        
+        <p>The unique, high-energy sound soon caught the attention of Hamburg's Lounge Records.  Produced a succession of singles and a string of popular remixes for major labels like BMG and Sony, working with artists like Bent, Pink, and Dido. This success led to chart-topping releases and nominations for prestigious awards such as Breaks Poll. He further cemented his status with releases on influential labels like Supercharged and Against the Grain in the mid 2000s.
+        </p>
+            
+        <p>  Never one to rest on his laurels, SuperStyleDeluxe launched The Payback Project, a pioneering label that quickly became a driving force in the scene. With a relentless pursuit of innovation and a commitment to pushing boundaries, The Payback Project helped shape the sound of a generation.
+           
+        </p> 
+           
+          
+         <p> Now, after a brief hiatus, SuperStyleDeluxe is back in 2023, bringing his evolved sound to the UK Garage and Bass scene. Get ready for the next chapter.
+            
+         </p>  
+
+         <p>
+            But SuperStyleDeluxe is more than just a producer. He's a skilled turntablist known for his dynamic DJ sets that seamlessly blend technical skill with an infectious energy. His worldwide adventures have taken him from  BBC Radio One the UK club circuit to tours across Australia, New Zealand, Asia, North America, Russia, and Europe, sharing the stage with acts like Pendulum. His passion for DJing even led him to collaborate with Ecler, contributing to the development of their NUO and HAK scratch mixers as part of the Ecler Pro Team.
+           
+
+
+
+         </p>
+
+
+
+
+         <amp-img src="assets/images/attachment1.jpg" layout="responsive" width="1080" height="566" style="max-width: 100%; height: auto; margin: 10px 0 20px;"
+     
+         
+         
+         
+         > </amp-img>
+          
+           <div class="list__heading">
+               <span class="icon">  
+                   <svg xmlns="http://www.w3.org/2000/svg" height="1.25rem" viewBox="0 -960 960 960" width="1.25rem" fill="#5f6368"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-7-.5-14.5T799-507q-5 29-27 48t-52 19h-80q-33 0-56.5-23.5T560-520v-40H400v-80q0-33 23.5-56.5T480-720h40q0-23 12.5-40.5T563-789q-20-5-40.5-8t-42.5-3q-134 0-227 93t-93 227h200q66 0 113 47t47 113v40H400v110q20 5 39.5 7.5T480-160Z"/></svg>
+
+               
+               </span>
+                  <span class="text" >   Countries Toured:</span>
+               </div>
+           
+
+
+
+
+
+
+
+
+<ul class="list">
+<li><strong> Australia </strong> (Multiple Tours)  <br>
+Sydney, Perth, Cairns, Adalade, Melbourne, Brisbane, Byron,Tasmania
+</li>
+<li> <strong>New Zealand  </strong>
+
+<br>
+Christ Church, Wellington
+</li>
+
+<li><strong>China </strong> (Multiple Tours) <br>
+Hong Kong, Guanjoh, Singapoor, Shenzen, Shanghai
+</li>
+<li> <strong>  Russia</strong>
+
+(Multiple Tours)  <br>
+Moscow, St PetersBerg, Farwater
+(Various Cities)
+</li>
+
+<li><strong>Canada </strong><br>
+Toronto, Niagra, Calgary, Whistle, Vancouver, Vancouver Island
+</li>
+<li><strong>Germany </strong> (Multiple Tours) <br>
+Berlin, Hamburg, Munich, Frankfurt, Dusstledorf, Hannover, Stuttgart, Cologne
+</li>
+<li><strong>Spain  </strong> (Multiple) <br>
+Madrid, Barcelona, Cadis, Seville
+</li>
+<li><strong>France </strong> (Multiple) <br>
+Meribell, Borg, Chamonix, Les Arcs, Velle’es, La Palgne
+</li>
+<li><strong> Hungary</strong> <br>
+Budapest
+</li>
+<li><strong>Finland </strong> <br>
+Helsinki,Pori
+</li>
+<li><strong>Sweden </strong> <br>
+Stockholm
+</li>
+
+</ul>
+
+<div class="list__heading">
+
+
+<span class="icon">  
+<svg xmlns="http://www.w3.org/2000/svg" height="1.25rem" viewBox="0 -960 960 960" width="1.25rem" fill="#555"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+</span>
+
+
+
+<span class="text" > Residencies:</span>
+
+
+
+</div>
+<ul class="list">
+<li>Privat Cub Berlin, (Monthly)</li>
+<li>Poppy Red Birmingham (Monthly)</li>
+<li>StumpJuice, Wolverhampton</li>
+<li>SuperCharged Brighton, (Every Three Months)</li>
+
+</ul>
+
+
+
+
+
+
+          </div>
+
+         
+      
+
+   
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="attachment_footer black">
+
+
+
+
+                <div class="footer__row">
+                 
+
+                  
+
+                       <ul class="social-menu__footer">
+
+                           <li>
+
+                               <a href="https://www.instagram.com/superstyledeluxe/" >
+
+
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                       fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                                       stroke-linejoin="round" >
+                                       <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                   </svg>
+
+
+
+                                   </i></a>
+                           </li>
+
+                           <li>
+                               <a href="https://open.spotify.com/artist/7loyEemyWacQIhuZb1kJ6a"
+                                   rel="noopener noreferer" >
+                                   
+                                       <svg role="img" viewBox="0 0 24 24" width="36" height="36"
+                                       fill="white" stroke-width="1" stroke-linecap="round"
+                                  
+                                           xmlns="http://www.w3.org/2000/svg">
+                                           <title>Spotify</title>
+                                           <path
+                                               d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
+                                           </path>
+                                       </svg>
+                                  
+                               </a>
+                           </li>
+                           <li>
+                               <a href="https://soundcloud.com/user-129363033" rel="noopener noreferer" >
+                                  
+                                       <svg role="img" viewBox="0 0 24 24" width="36" height="36"
+                                           xmlns="http://www.w3.org/2000/svg"  fill="white">
+                                           <title>SoundCloud</title>
+                                           <path
+                                               d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952">
+                                           </path>
+                                       </svg>
+                             
+                               </a>
+
+                           </li>
+
+           
+
+                       </ul>
+
+                  </div>
+            
+      
+            
+                  <div class="footer__column footer__column--bottom">
+                  
+                    
+            
+            <span>
+              
+              <amp-img src="assets/images/logo-footer.png"  width="200" height="122" style="max-width: 120px;
+           
+              max-height: 80px;"  > </amp-img>
+            </span>
+       
+             
+                  <span ><p>© 2025  TellMe Something</p></span></div>
+                  
+                </div>
+            
+
+      </div>
+
+
+
+
+
+  </amp-story-page-attachment>
+        
+        
+        
+
+        </amp-story-page>
+
+
+                  <!---- 3Page-->
+
+                  <amp-story-page id="slide3">
 
                  
 
@@ -1273,11 +1679,11 @@ p:after{
                     <amp-story-grid-layer template="vertical">
 
                         <figure style=" top: 8%;
-                        max-width: 170px;
+                        max-width: 150px;
                         left: 4%;
                         position: absolute;">
-                        <amp-img src="assets/logo.png" width="643" height="485" layout="responsive"
-                            style="">
+                        <amp-img src="assets/images/dance.png" width="150" height="29" layout="responsive"
+                            >
                         </amp-img>
         
                     </figure>
@@ -1286,412 +1692,249 @@ p:after{
         
 
 
-
-                        <amp-story-page-attachment layout="nodisplay" theme="dark" class="attachment;" 
-                         >
-           
-           
-           
-                               <div class="attachment_infobox pr1 pl1 pb2">
-           
-           
-           
-                                   <div class="attachment_infobox_photo-wrapper">
-           
-           
-                                       <amp-img src="assets/images/couple.png" width="160" height="160" layout="fixed">
-                                       </amp-img>
-                                       <div style="padding: 0 0.938rem;">
-                                           <h5 style="letter-spacing: 0.7px;
-                                           line-height: 100%;
-                                           text-transform: uppercase;margin: 0;">SuperStyle Deluxe</h5>
-                                           <p class="text-small" style="font-size: 0.75rem;
-  line-height: 140%; display: block; color: white; margin: 0;"> DJ, Musician, Producer</p>
-           
-                                       </div>
-                                   </div>
-           
-                                   <div class="infobox-data">
-
-                                    <div class="item" style="display: flex;
-                                    align-items: center; margin-bottom: 10px;
-                                    ">  
-           <span> 
-
-           
-                                       <svg role="img" viewBox="0 0 24 24" width="28" height="28" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                           <title>Spotify</title>
-                                           <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
-                                           </path>
-                                       </svg>
-
-                                    </span>
-                                       <span style="font-size: 1rem;
-                                       text-transform: uppercase;
-                                       line-height: 110%;
-                                       font-weight: bold;"> 
-                                   
-                                           
-                                           28.2 monthly listeners
-                                         
-           
-                                           <br>
-                                </span>
-
-                                        </div>
-
-                                        <div class="item" style="display: flex;
-                                        align-items: center; flex-direction: row; column-gap: 1.25rem;
-                                        ">  
-
-<div style="align-items: center;
-flex-direction: column;
-text-align: CENTER;
-
-display: flex;"> 
-<span style="letter-spacing: 0.9px;
-line-height: 100%;
-font-size: 70px;
-font-weight: 800;">UK
+                <amp-story-page-attachment layout="nodisplay" theme="light" class="attachment;" title="Performance"   
+                cta-image="assets/images/avatar.jpg"  cta-text="To DJ Mix  "           
+                >
+            
+            
+            
+          
+            
+                 
+                  <div class="attachment_bg-grey ">
+                      <div class="attachment_supporting-text pr1 pl1 pb1">
+                       
+                  
 
 
 
-</span>
-
-<amp-img src="assets/images/icons/ukflag.png" width="31px" height="15px" layout="fixed">
-</amp-img>
-
-</div>                                     <span>
-      All of UK, including Clubs like Fabric, Ministry Of Sound, Concord, Brighton, Custard Factory, Birmingham. Canal Club Wolverhampton
-        </span>
-    
-
-    </div>
-
-
-
-                                   </div>
-           
-           
-           
-                               </div>
-           
-                          
-                           <div class="attachment_bg-grey ">
-                               <div class="attachment_supporting-text pr1 pl1 pb1">
-
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7loyEemyWacQIhuZb1kJ6a?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                               
-                               
-                                <div class="list__heading">
-                                    <span class="icon">  
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="1.25rem" viewBox="0 -960 960 960" width="1.25rem" fill="#5f6368"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-7-.5-14.5T799-507q-5 29-27 48t-52 19h-80q-33 0-56.5-23.5T560-520v-40H400v-80q0-33 23.5-56.5T480-720h40q0-23 12.5-40.5T563-789q-20-5-40.5-8t-42.5-3q-134 0-227 93t-93 227h200q66 0 113 47t47 113v40H400v110q20 5 39.5 7.5T480-160Z"/></svg>
-
-                                    
-                                    </span>
-                                       <span class="text" >   Countries Toured:</span>
-                                    </div>
-                                
+<div>Google Docs (Timetable)
+    <amp-google-document-embed
+src="https://drive.google.com/file/d/15sINB6ew8XHzWyCx21z66jK1LfTb4Zoe/view?usp=sharing"
+width="800"
+height="600"
+layout="responsive"
+>
+</amp-google-document-embed></div>
 
 
 
 
 
+
+
+
+                       <div class="list__heading">
+                           <span class="icon">  
+                               <svg xmlns="http://www.w3.org/2000/svg" height="1.25rem" viewBox="0 -960 960 960" width="1.25rem" fill="#5f6368"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-7-.5-14.5T799-507q-5 29-27 48t-52 19h-80q-33 0-56.5-23.5T560-520v-40H400v-80q0-33 23.5-56.5T480-720h40q0-23 12.5-40.5T563-789q-20-5-40.5-8t-42.5-3q-134 0-227 93t-93 227h200q66 0 113 47t47 113v40H400v110q20 5 39.5 7.5T480-160Z"/></svg>
+            
+                           
+
+                           </span>
+
+
+
+
+
+
+
+
+
+
+
+
+                              <span class="text" >   Countries Toured:</span>
+                           </div>
+                       
+            
+            
+            
+            
+            
+            
+            
+            
+            <ul class="list">
+            <li><strong> Australia </strong> (Multiple Tours)  <br>
+            Sydney, Perth, Cairns, Adalade, Melbourne, Brisbane, Byron,Tasmania
+            </li>
+            <li> <strong>New Zealand  </strong>
+            
+            <br>
+            Christ Church, Wellington
+            </li>
+            
+            <li><strong>China </strong> (Multiple Tours) <br>
+            Hong Kong, Guanjoh, Singapoor, Shenzen, Shanghai
+            </li>
+            <li> <strong>  Russia</strong>
+            
+            (Multiple Tours)  <br>
+            Moscow, St PetersBerg, Farwater
+            (Various Cities)
+            </li>
+            
+            <li><strong>Canada </strong><br>
+            Toronto, Niagra, Calgary, Whistle, Vancouver, Vancouver Island
+            </li>
+            <li><strong>Germany </strong> (Multiple Tours) <br>
+            Berlin, Hamburg, Munich, Frankfurt, Dusstledorf, Hannover, Stuttgart, Cologne
+            </li>
+            <li><strong>Spain  </strong> (Multiple) <br>
+            Madrid, Barcelona, Cadis, Seville
+            </li>
+            <li><strong>France </strong> (Multiple) <br>
+            Meribell, Borg, Chamonix, Les Arcs, Velle’es, La Palgne
+            </li>
+            <li><strong> Hungary</strong> <br>
+            Budapest
+            </li>
+            <li><strong>Finland </strong> <br>
+            Helsinki,Pori
+            </li>
+            <li><strong>Sweden </strong> <br>
+            Stockholm
+            </li>
+            
+            </ul>
+            
+            <div class="list__heading">
+            
+            
+            <span class="icon">  
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25rem" viewBox="0 -960 960 960" width="1.25rem" fill="#555"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+            </span>
+            
+            
+            
+            <span class="text" > Residencies:</span>
+            
+            
+            
+            </div>
+            <ul class="list">
+            <li>Privat Cub Berlin, (Monthly)</li>
+            <li>Poppy Red Birmingham (Monthly)</li>
+            <li>StumpJuice, Wolverhampton</li>
+            <li>SuperCharged Brighton, (Every Three Months)</li>
+            
+            </ul>
+            
+            
+            
+            
+            
+            
+                      </div>
+            
+                     
+                  
+            
+               
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+      <div class="attachment_footer black">
+
+
+
+
+        <div class="footer__row">
          
 
+          
 
-<ul class="list">
-    <li><strong> Australia </strong> (Multiple Tours)  <br>
-        Sydney, Perth, Cairns, Adalade, Melbourne, Brisbane, Byron,Tasmania
-    </li>
-    <li> <strong>New Zealand  </strong>
-        
-        <br>
-        Christ Church, Wellington
-        </li>
+               <ul class="social-menu__footer">
 
-    <li><strong>China </strong> (Multiple Tours) <br>
-Hong Kong, Guanjoh, Singapoor, Shenzen, Shanghai
-</li>
-    <li> <strong>  Russia</strong>
-        
-        (Multiple Tours)  <br>
-        Moscow, St PetersBerg, Farwater
-        (Various Cities)
-        </li>
+                   <li>
 
-    <li><strong>Canada </strong><br>
-Toronto, Niagra, Calgary, Whistle, Vancouver, Vancouver Island
-</li>
-    <li><strong>Germany </strong> (Multiple Tours) <br>
-        Berlin, Hamburg, Munich, Frankfurt, Dusstledorf, Hannover, Stuttgart, Cologne
-        </li>
-    <li><strong>Spain  </strong> (Multiple) <br>
-        Madrid, Barcelona, Cadis, Seville
-        </li>
-    <li><strong>France </strong> (Multiple) <br>
-        Meribell, Borg, Chamonix, Les Arcs, Velle’es, La Palgne
-        </li>
-    <li><strong> Hungary</strong> <br>
-        Budapest
-        </li>
-    <li><strong>Finland </strong> <br>
-        Helsinki,Pori
-        </li>
-    <li><strong>Sweden </strong> <br>
-        Stockholm
-        </li>
-    
-</ul>
-
-<div class="list__heading">
+                       <a href="https://www.instagram.com/superstyledeluxe/" >
 
 
-<span class="icon">  
-    <svg xmlns="http://www.w3.org/2000/svg" height="1.25rem" viewBox="0 -960 960 960" width="1.25rem" fill="#555"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
-   </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                               fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                               stroke-linejoin="round" >
+                               <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                           </svg>
 
 
 
-   <span class="text" > Residencies:</span>
+                           </i></a>
+                   </li>
 
-
-
-</div>
-<ul class="list">
-    <li>Privat Cub Berlin, (Monthly)</li>
-    <li>Poppy Red Birmingham (Monthly)</li>
-    <li>StumpJuice, Wolverhampton</li>
-    <li>SuperCharged Brighton, (Every Three Months)</li>
-
-</ul>
-
-
-
-           
-           
-           
-                               </div>
-           
-                              
-                               <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2004878771&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-129363033" title="SuperStyle Deluxe uk" target="_blank" style="color: #cccccc; text-decoration: none;">SuperStyle Deluxe uk</a> · <a href="https://soundcloud.com/user-129363033/wheres-the-massive" title="Where&#x27;s The Massive?" target="_blank" style="color: #cccccc; text-decoration: none;">Where&#x27;s The Massive?</a></div>
-           
-                                   
-                                
-           
-                                   <div class="social-menu pl1 pr1 pb1">
-           
-                                   <ul>
-           
-                                       <li>
-                                           <a href="https://www.youtube.com/hashtag/shosh" 
-                                               rel="noopener noreferrer">
-           
-           
-                                               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                                   fill="none" stroke="black" stroke-width="2" stroke-linecap="round"
-                                                   stroke-linejoin="round" class="feather feather-youtube">
-                                                   <path
-                                                       d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-                                                   <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
-                                               </svg>
-           
-           
-           
-                                           </a>
-                                       </li>
-                                       <li>
-           
-                                           <a href="https://www.instagram.com/shosh_ukg/?hl=en" >
-           
-           
-                                               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                                   fill="none" stroke="black" stroke-width="2" stroke-linecap="round"
-                                                   stroke-linejoin="round" class="feather feather-instagram">
-                                                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                                               </svg>
-           
-           
-           
-                                               </i></a>
-                                       </li>
-           
-                                       <li>
-                                           <a href="https://open.spotify.com/artist/1emgVmY6u8GGlRhkHESKKH"
-                                               rel="noopener noreferer" >
-                                               <div class="w-5 h-5">
-                                                   <svg role="img" viewBox="0 0 24 24" width="28" height="28"
-                                                       xmlns="http://www.w3.org/2000/svg">
-                                                       <title>Spotify</title>
-                                                       <path
-                                                           d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
-                                                       </path>
-                                                   </svg>
-                                               </div>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a href="https://soundcloud.com/shosh_ukg" rel="noopener noreferer" >
-                                               <div class="w-5 h-5">
-                                                   <svg role="img" viewBox="0 0 24 24" width="28" height="28"
-                                                       xmlns="http://www.w3.org/2000/svg">
-                                                       <title>SoundCloud</title>
-                                                       <path
-                                                           d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952">
-                                                       </path>
-                                                   </svg>
-                                               </div>
-                                           </a>
-           
-                                       </li>
-           
-                                       <li>
-                                           <a href="https://www.facebook.com/shosh.ukg/?locale=en_GB" rel="noopener noreferer"
-                                               >
-                                               <div class="w-5 h-5">
-                                                   <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                       width="28" height="28">
-                                                       <title>Facebook</title>
-                                                       <path
-                                                           d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
-                                                       </path>
-                                                   </svg>
-                                               </div>
-                                           </a>
-                                       </li>
-           
-                                   </ul>
-           
-                               </div>
-           
-                           </div>
-           
-           
-           
-                           <div class="attachment_footer">
-           
-           
-                  
-                 
-                                     <div class="footer__row">
-                                      
-
-                                       
-           
-                                            <ul class="social-menu__footer">
-                    
-                                                <li>
-                                                    <a href="https://www.youtube.com/hashtag/shosh" 
-                                                        rel="noopener noreferrer">
-                    
-                    
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                                                            fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-youtube">
-                                                            <path
-                                                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-                                                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
-                                                        </svg>
-                    
-                    
-                    
-                                                    </a>
-                                                </li>
-                                                <li>
-                    
-                                                    <a href="https://www.instagram.com/shosh_ukg/?hl=en" >
-                    
-                    
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                                                            fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" >
-                                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                                                        </svg>
-                    
-                    
-                    
-                                                        </i></a>
-                                                </li>
-                    
-                                                <li>
-                                                    <a href="https://open.spotify.com/artist/1emgVmY6u8GGlRhkHESKKH"
-                                                        rel="noopener noreferer" >
-                                                        
-                                                            <svg role="img" viewBox="0 0 24 24" width="36" height="36"
-                                                            fill="white" stroke-width="1" stroke-linecap="round"
-                                                       
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <title>Spotify</title>
-                                                                <path
-                                                                    d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
-                                                                </path>
-                                                            </svg>
-                                                       
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://soundcloud.com/shosh_ukg" rel="noopener noreferer" >
-                                                       
-                                                            <svg role="img" viewBox="0 0 24 24" width="36" height="36"
-                                                                xmlns="http://www.w3.org/2000/svg"  fill="white">
-                                                                <title>SoundCloud</title>
-                                                                <path
-                                                                    d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952">
-                                                                </path>
-                                                            </svg>
-                                                  
-                                                    </a>
-                    
-                                                </li>
-                    
-                                                <li>
-                                                    <a href="https://www.facebook.com/shosh.ukg/?locale=en_GB" rel="noopener noreferer"
-                                                        >
-                                                      
-                                                            <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                                width="36" height="36" fill="white">
-                                                                <title>Facebook</title>
-                                                                <path
-                                                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
-                                                                </path>
-                                                            </svg>
-                                                     
-                                                    </a>
-                                                </li>
-                    
-                                            </ul>
-                    
-                                       </div>
-                                 
+                   <li>
+                       <a href="https://open.spotify.com/artist/7loyEemyWacQIhuZb1kJ6a"
+                           rel="noopener noreferer" >
                            
-                                 
-                                       <div class="footer__column footer__column--bottom">
-                                       
-                                         
-                                 
-                                 <span>
-                                   
-                                   <amp-img src="assets/logo.png" class="hs-image-widget " width="250" height="189" style="max-width: 100%; height: auto;"  >
-                                 </span>
-                            
-                                  
-                                       <span ><p>© 2024  YO deejay</p></span></div>
-                                       
-                                     </div>
-                                 
+                               <svg role="img" viewBox="0 0 24 24" width="36" height="36"
+                               fill="white" stroke-width="1" stroke-linecap="round"
+                          
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <title>Spotify</title>
+                                   <path
+                                       d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
+                                   </path>
+                               </svg>
+                          
+                       </a>
+                   </li>
+                   <li>
+                       <a href="https://soundcloud.com/user-129363033" rel="noopener noreferer" >
+                          
+                               <svg role="img" viewBox="0 0 24 24" width="36" height="36"
+                                   xmlns="http://www.w3.org/2000/svg"  fill="white">
+                                   <title>SoundCloud</title>
+                                   <path
+                                       d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952">
+                                   </path>
+                               </svg>
                      
-                           </div>
-           
-           
-           
-           
-           
-                       </amp-story-page-attachment>
-                
+                       </a>
+
+                   </li>
+
+   
+
+               </ul>
+
+          </div>
+    
+
+    
+          <div class="footer__column footer__column--bottom">
+          
+            
+    
+    <span>
+      
+      <amp-img src="assets/images/logo-footer.png"  width="200" height="122" style="max-width: 120px;
+   
+      max-height: 80px;"  > </amp-img>
+    </span>
+
+     
+          <span ><p>© 2025  TellMe Something</p></span></div>
+          
+        </div>
+            
+                  </div>
+            
+            
+            
+            
+            
+              </amp-story-page-attachment>
         
                 </amp-story-page>
 
@@ -1701,9 +1944,9 @@ Toronto, Niagra, Calgary, Whistle, Vancouver, Vancouver Island
 
 
 
-                  <!----  3Slideo-->
+                  <!----  Slide4-->
 
-                  <amp-story-page id="slide-3">
+                  <amp-story-page id="slide4">
 
 
 
@@ -1741,16 +1984,12 @@ Toronto, Niagra, Calgary, Whistle, Vancouver, Vancouver Island
                        
                     </amp-story-grid-layer>
                  
-                        <amp-story-page-attachment layout="nodisplay" theme="light" class="attachment;" 
+                        <amp-story-page-attachment layout="nodisplay" theme="light" class="attachment;" title="Perfomance" cta-text="Perfomance" 
                         >
            
            
 
-                        <div style="margin: 0 1rem;">
-                            <h2  style="    font-size: 2.375rem; line-height: 100%; margin: 0;"> Performance</h2>
-                            
-
-                        </div>
+                  
 
                         
            
@@ -1781,34 +2020,91 @@ Toronto, Niagra, Calgary, Whistle, Vancouver, Vancouver Island
    
            
            
-           
-                           <div class="attachment_footer">
-           
-           
-                  
-                 
 
-                           
-                                 
-                                       <div class="footer__column footer__column--bottom">
-                                       
+                        <div class="attachment_footer black">
+
+
+
+
+                            <div class="footer__row">
+                             
+            
+                              
+            
+                                   <ul class="social-menu__footer">
+            
+                                       <li>
+            
+                                           <a href="https://www.instagram.com/superstyledeluxe/" >
+            
+            
+                                               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                                   fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                                                   stroke-linejoin="round" >
+                                                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                               </svg>
+            
+            
+            
+                                               </i></a>
+                                       </li>
+            
+                                       <li>
+                                           <a href="https://open.spotify.com/artist/7loyEemyWacQIhuZb1kJ6a"
+                                               rel="noopener noreferer" >
+                                               
+                                                   <svg role="img" viewBox="0 0 24 24" width="36" height="36"
+                                                   fill="white" stroke-width="1" stroke-linecap="round"
+                                              
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <title>Spotify</title>
+                                                       <path
+                                                           d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
+                                                       </path>
+                                                   </svg>
+                                              
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <a href="https://soundcloud.com/user-129363033" rel="noopener noreferer" >
+                                              
+                                                   <svg role="img" viewBox="0 0 24 24" width="36" height="36"
+                                                       xmlns="http://www.w3.org/2000/svg"  fill="white">
+                                                       <title>SoundCloud</title>
+                                                       <path
+                                                           d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952">
+                                                       </path>
+                                                   </svg>
                                          
-                                     
-                                 
-                                   
-                                 
-                                 
-                                 
-                                 <span>
-                                   
-                                   <amp-img src="assets/logo-footer.png" class="hs-image-widget " width="350" height="44" style="max-width: 100%; height: auto;"  >
-                                 </span>
-                            
-                                  
-                                       <span ><p>© 2024  YO deejay</p></span></div>
-                                       
-                                     </div>
-                                 
+                                           </a>
+            
+                                       </li>
+            
+                       
+            
+                                   </ul>
+            
+                              </div>
+                        
+                  
+                        
+                              <div class="footer__column footer__column--bottom">
+                              
+                                
+                        
+                        <span>
+                          
+                          <amp-img src="assets/images/logo-footer.png"  width="200" height="122" style="max-width: 120px;
+                       
+                          max-height: 80px;"  > </amp-img>
+                        </span>
+                   
+                         
+                              <span ><p>© 2025  TellMe Something</p></span></div>
+                              
+                            </div>
                      
                            </div>
            
@@ -1828,34 +2124,6 @@ Toronto, Niagra, Calgary, Whistle, Vancouver, Vancouver Island
 
 
 
-       <!----  4slide-->
-
-       <amp-story-page id="slide-4">
-        <amp-story-grid-layer template="vertical"  style="  background-color:#191917;">                        
-                <div class="iframe-wrapper" 
-                style="border: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                width: 100%;
-                height: 100%;
-                flex-direction: column;              
-                overflow: hidden;">  
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7loyEemyWacQIhuZb1kJ6a?utm_source=generator" width="100%" height="900" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>   
-        </amp-story-grid-layer>
-
-
-
-
-    
-
-
-
-    </amp-story-page>
-
-    <!---- Page-->
 
 
 
@@ -1882,52 +2150,122 @@ Toronto, Niagra, Calgary, Whistle, Vancouver, Vancouver Island
         </amp-story-grid-layer>
  
 
-        <amp-story-page-attachment layout="nodisplay" class="attachment;" theme="light" cta-text="Learn More">
+        <amp-story-page-attachment layout="nodisplay" class="attachment;" theme="light" cta-text="Contacts" title="Contacts"   >
+
+            <div class="attachment_infobox beige pr1 pl1 pb2">
+            
+            
+                <h4 style="font-size: 1rem;
+                text-transform: uppercase;
+                line-height: 110%; margin: 0 0 20px;
+              ">For all Dj Bookings</h4>
+    
+          
 
 
-            <div style="left: 0; width: 100%; height: 300px; position: relative;"><iframe src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2004775771&auto_play=false&show_artwork=true&visual=true&origin=iframely" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
+<span> Email:</span>
+                <a href="mailto:mgmt@payback-project.co.uk.br">mgmt@payback-project.co.uk</a>
+    
+               
+    
+    
+              </div>
 
 
-            Tracks
+       
 
-            <div style="left: 0; width: 100%; height: 300px; position: relative;"><iframe src="https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Fusers%2F1242154615&show_artwork=true" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
-
-
-            20
-
-            <div style="left: 0; width: 100%; height: 600px; position: relative;"><iframe src="https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Fusers%2F1242154615&show_artwork=true" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
-
-
-
-
-
-            hjhk
-
-            <div style="left: 0; width: 100%; height: 400px; position: relative;"><iframe src="https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2004878771&show_artwork=true" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
-
-
-            77
-
-
-            <div style="left: 0; width: 100%; height: 200px; position: relative;"><iframe src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1901832615&auto_play=false&show_artwork=true&visual=true&origin=iframely" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
-        <div class="attachment_bg-grey">
-
-
-            <div style="left: 0; width: 100%; height: 166px; position: relative;"><iframe src="https://w.soundcloud.com/player/?visual=false&url=https%3A%2F%2Fapi.soundcloud.com%2Fusers%2F1242154615&show_artwork=false" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
-
-            <div style="left: 0; width: 100%; height: 166px; position: relative;"><iframe src="https://w.soundcloud.com/player/?visual=false&url=https%3A%2F%2Fapi.soundcloud.com%2Fusers%2F1242154615&show_artwork=false" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
-
-            <div style="left: 0; width: 100%; height: 166px; position: relative;"><iframe src="https://w.soundcloud.com/player/?visual=false&url=https%3A%2F%2Fapi.soundcloud.com%2Fusers%2F1242154615&show_artwork=false" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
-
-
-      
-      
        
 
 
     </div>
 
     
+    <div class="attachment_footer black">
+
+
+
+
+        <div class="footer__row">
+         
+
+          
+
+               <ul class="social-menu__footer">
+
+                   <li>
+
+                       <a href="https://www.instagram.com/superstyledeluxe/" >
+
+
+                           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                               fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                               stroke-linejoin="round" >
+                               <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                           </svg>
+
+
+
+                           </i></a>
+                   </li>
+
+                   <li>
+                       <a href="https://open.spotify.com/artist/7loyEemyWacQIhuZb1kJ6a"
+                           rel="noopener noreferer" >
+                           
+                               <svg role="img" viewBox="0 0 24 24" width="36" height="36"
+                               fill="white" stroke-width="1" stroke-linecap="round"
+                          
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <title>Spotify</title>
+                                   <path
+                                       d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
+                                   </path>
+                               </svg>
+                          
+                       </a>
+                   </li>
+                   <li>
+                       <a href="https://soundcloud.com/user-129363033" rel="noopener noreferer" >
+                          
+                               <svg role="img" viewBox="0 0 24 24" width="36" height="36"
+                                   xmlns="http://www.w3.org/2000/svg"  fill="white">
+                                   <title>SoundCloud</title>
+                                   <path
+                                       d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952">
+                                   </path>
+                               </svg>
+                     
+                       </a>
+
+                   </li>
+
+   
+
+               </ul>
+
+          </div>
+    
+
+    
+          <div class="footer__column footer__column--bottom">
+          
+            
+    
+    <span>
+      
+      <amp-img src="assets/images/logo-footer.png"  width="200" height="122" style="max-width: 120px;
+   
+      max-height: 80px;"  > </amp-img>
+    </span>
+
+     
+          <span ><p>© 2025  TellMe Something</p></span></div>
+          
+        </div>
+
+    </amp-story-page-attachment>
 
 
 
@@ -2007,9 +2345,8 @@ Toronto, Niagra, Calgary, Whistle, Vancouver, Vancouver Island
      <p> <strong>  Promo only</strong>
      
     <br>    <br>
-                    Hand made by TMS (musiv technology startup) <br>
-                       New media technology from Google which we adapt to music inustry needs
-                   <br> <br> Write us here:
+                    Hand made by TMS 
+                   <br> <br> Email:
                    <a href="mailto: okp@domain.com">okp@hjjjj.com</a>
    
                </p>
@@ -2028,31 +2365,6 @@ Toronto, Niagra, Calgary, Whistle, Vancouver, Vancouver Island
 
 
 
-
-
-
-            <amp-story-grid-layer template="thirds">
-
-                <a href="https://www.youtube.com/hashtag/porijazz" role="link" 
-                grid-area="lower-third"
-                 data-tooltip-icon="assets/images/youtube-icon.png"
-                  data-tooltip-text="#porijazz" 
-                  class="source-btn right"                  
-                  data-tooltip-text="YouTube"
-
-                  style="margin-bottom: 20rem;"
-                 >
-                     <amp-img src="assets/images/youtube3.png" height="30px" width="60px" layout="fixed" class="center"
-                     animate-in="pulse"
-                 
-                    >
-                     </amp-img>  
- #porijazz
-                   
-                  </span> 
-                 </a>
-        
-              </amp-story-grid-layer>
 
 
 
