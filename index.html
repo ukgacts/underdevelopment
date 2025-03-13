@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
 
     <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3Ctext%20x='0'%20y='14'%3E❎%3C/text%3E%3C/svg%3E" type="image/svg+xml">
-
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    
 <!-- HTML Meta Tags -->
 <title>Crucial Todd</title>
-<meta name="title" content="Crucial Todd
-" />
+<meta name="title" content="Crucial Todd" />
 
 <!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://yodeejay.co.uk/stories/ssd">
@@ -34,7 +34,7 @@
     <!-- Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;800&family=Roboto:wght@300;400;500;700&display=swap"
@@ -56,9 +56,8 @@
 
 
 
-
     <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
-    <title>SuperStyle Deluxe</title>
+ 
     <link rel="canonical" href="https://yodeejay.co.uk/stories/ssd" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
 
@@ -72,22 +71,19 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
    
    
-   
+
+
    
    
    
    <style amp-custom>
-        amp-story {
+
+        amp-story-page {
+            background-color: #0D0D1A;
             font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
 
   font-style: normal;
-  font-style: normal;
-            color: #fff;
-        }
-
-        amp-story-page {
-            background-color: #000;
         }
 
 
@@ -395,74 +391,126 @@ line-height: 0.5;     color: #ed3833;
 
 
 
-        /**** Video Player ***/
+        
 
-        /* Wrapper that hosts the video and the overlay */
-        .video-player {
-            position: relative;
-            overflow: hidden;
+   /** Animation **/
+
+        .dot-container {
+        width: 2em;
+        height: 3em;
+     
+      }
+      .dot {
+        width: 100%;
+        height: 100%;
+        
+        border-radius: 50%;
+        position: relative;
+        animation: pop 1s ease-in-out .5s infinite alternate;
+      }
+      .dot::after {
+        content: '';
+        width: 2em;
+        height: 2em;
+        background-image: url(" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACEUlEQVR4AWJwL/ChKyZaoUrtV0mlstf5koBe6wG2kigKA/CsGa9t23a09gbr3ZhlsLZt2/bWjGorqG27p/2TTnNzcufhFkn+x5n5cq5tM34MsMsIQPAZv+G/FgWnHM6/O8Auk2RZcaaEEFyjBPKqGipJM8IWnyoGJiZ1wf33PZTBI/s+l2oOeRyiPrYZMqwJVQKzV85yylkxkTgKbPrhPIawnK74ZBWYtXL2pOyVswkpWjaaXu84TZpjfhO26mxpQMODg6XYqSpaeP9t9YwvE4dYAz4AJqK+6w7SKLtkf7GP8FmEgS2+4U0zPy2jWe+3XLIGTBZBJH/XhBrZtUB1bOnlKJr1YR3NfL+Fpr3f4m8RmD1pRncZWPm1x1ujfkGfLT+fDkgPKkxQArMWzqHyp72pxku7Ywqc89KhAtVZDvImFTFvjapdO6YYgQzTwUiLQUwJYEWnhzViHRCqc2t/nl+79sPmFzrCwM8Wg5nz59pjkAiYkI6htW7tjyJff02J45AA7rcYRD9ySAy5aRT+bxANf7fNCCu3eqVBBUZYtnNPCcSqU1lLMVA4hvfNH9fIMTY6FcBOI3iFx78tNmxKBEuaKqhXuUWvzgyG6ra1yAaM6fDt11Rz2KUWPWJgbZRjfN1sIRCLNIa7DMR/LQ4i6CPLp4A6yNFIPgVaG9yvWp0SiP5S6TtVUK/yEqJ+8m7D1APoAJl6pXt4vAAAAABJRU5ErkJggg==");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        position: absolute;
+        left: 1%;
+        top: 20%;
+      }
+      @keyframes pop {
+        0% {
+          transform: scale(.8);
         }
-
-        /* Overlay fills the parent and sits on top of the video */
-        .click-to-play-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+        100% {
+          transform: scale(1);
         }
+      }
 
-        .poster-image {
-            position: absolute;
-            z-index: 1;
+
+
+     .animation-container {
+        width: 150px;
+        height: 29px;
+        position: absolute;
+        left: 4%;
+        top: 4%;
+
+
+     }
+
+.animation {
+
+    width: 100%;
+        height: 100%;
+        
+      
+        position: relative;
+        animation: pulse 1s ease-in-out .5s infinite alternate;
+}
+
+
+.img-container-logo { 
+
+width: 100%;
+        height: 100%;
+        
+      
+        position: relative;
+      
+}
+    
+
+.img-container-logo::after {
+    content: '';
+        width: 92px;
+        height: 92px;
+        
+        background-image: url("assets/images/tms-logo--square.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        position: absolute;
+
+}
+
+
+
+
+
+
+ .animation::after{
+
+        content: '';
+        width: 150px;
+        height: 29px;
+        
+        background-image: url("assets/images/dance.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        position: absolute;
+       
+
+
+ } 
+      @keyframes pulse {
+        0% {
+          transform: scale(.8);
         }
-
-        .poster-image img {
-            object-fit: cover;
+        100% {
+          transform: scale(1);
         }
+      }
+    
 
-        .video-title {
-            position: absolute;
-            z-index: 2;
 
-            /* Align to the top left */
-            top: 0;
-            left: 0;
-
-            font-size: 1.3em;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fafafa;
-            padding: 0.5rem;
-            margin: 0px;
-        }
-
-        .play-icon {
-            position: absolute;
-            z-index: 2;
-
-            width: 100px;
-            height: 100px;
-
-            background-image: url(https://amp.dev/static/samples/img/play-icon.png);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-
-            /* Align to the middle */
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            cursor: pointer;
-            opacity: 0.9;
-        }
-
-        .play-icon:hover,
-        .play-icon:focus {
-            opacity: 1;
-        }
-
-        /** Video Player--end***/
-
+   /** Animation--end **/
 
         /* * XEN * */
 
@@ -1703,40 +1751,20 @@ display: block; color: #878787;">Featured: </span>
                  
                  
 
-                    <amp-story-grid-layer template="vertical">
+                  
+
+                <amp-story-grid-layer template="vertical">
 
 
-                        <h3 class="wrong-footer" animate-in="fly-in-right" animate-in-delay=".2s"
-                        style="font-weight: normal;
-                        font-size: 14px;
-                        line-height: 18px;
-                        background: #ffffffee;
-                        color: black;
-                        width: 16em;
-                        border-left: 0.5em solid rgb(254, 63, 63);
-                        position: absolute;
-                        left: 10%;
-                        top: 70%;
-                        font-family: Arial,sans-serif;
-                        padding: 0.5em 0.8em;
-                        transform: translate(-278.578px);
-                        border-radius: 0.2em;"
-                        
-                        
-                        
-                        >Hello everyone! This is me performing my favourite track at... </h3>
+                    <div class="animation-container dance" animate-in="scale-fade-up"  style=" opacity: 0; transform: scale(0.8);"> 
 
-                        <figure style=" top: 10%;
-                        max-width: 150px;
-                        left: 8%;
-                        position: absolute;">
-                        <amp-img src="assets/images/dance.png" width="150" height="29" layout="responsive" 
-                        animate-in="scale-fade-up" style="opacity: 0; transform: scale(0.8);"
-                            >
-                        </amp-img>
+
         
-                    </figure>
+<div class="animation"></div>
         
+                 
+                </div>
+
                 </amp-story-grid-layer>
         
 
@@ -2170,9 +2198,22 @@ display: block; color: #878787;">Featured: </span>
         </amp-story-grid-layer>
 
 
-        <amp-story-grid-layer template="container" class="gradient">
+        <amp-story-grid-layer template="vertical" class="gradient">
 
-          
+
+
+<div style="color:white; display: flex; align-items: center;
+
+background: #0D0D1A77;border-radius: 9px;
+width: 8rem;"> 
+            <div class="dot-container" animate-in="scale-fade-up" style="opacity: 0; transform: scale(0.8);">
+                <div class="dot"></div>
+              </div>
+<span style="font-size: 14px;
+line-height: 20px;
+font-weight: 400;
+">NW3 London <br> Arts Club </span>
+            </div>
         </amp-story-grid-layer>
  
 
@@ -2358,17 +2399,19 @@ max-height: 80px;"  > </amp-img>
         <!----Bookend Page-->
 
 
-        <amp-story-page id="page-bookend" style="background-color: ; ">
+        <amp-story-page id="page-bookend" style="background-color: #dbbfbe;  ">
+<amp-story-grid-layer template="fill">
+    <div style="background-color: #D97F73; max-width: 84%; margin-left: auto;"></div>
+</amp-story-grid-layer>
 
 
-
-            <amp-story-grid-layer template="vertical" style="align-content: start; ">
+            <amp-story-grid-layer template="fill" style="align-content: start; ">
 
                 <div class="wrong-footer" animate-in="fly-in-left" 
                 style="font-weight: normal;
                 font-size: 14px;
                 line-height: 18px;
-                background: #ffffffee;
+               
                 color: black;
                 width: 22em;
                 border-top: 0.5em solid rgb(254, 63, 63);
@@ -2378,12 +2421,12 @@ max-height: 80px;"  > </amp-img>
                 font-family: Arial,sans-serif;
                 padding: 0.5em 0.8em;
                 transform: translate(-278.578px);
-                border-radius: 0.2em;"
+                border-radius: 0.2em; box-shadow: 11px 11px 60px #FF5E5E;"
                 
                 
                 
                 >
-                <amp-img  src="assets/images/qrcode.png" width="60px" height="60px" layout="responsive" style="max-height: 100px;
+                <amp-img  src="assets/images/qrcode.png" width="60px" height="60px" layout="responsive" style="max-height: 100px; margin:auto;
   max-width: 100px;"
                 >
                 </amp-img>
@@ -2392,7 +2435,8 @@ max-height: 80px;"  > </amp-img>
                 
                 https://yodeejay.co.uk/stories/teddybear/
                
-                
+                <svg data-v-9318d734="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 56 52" class="HeartIcon HeartIcon--front"><path fill="#EF4925" stroke="#000" d="m27.153 16.124.451.903.445-.907c.245-.5.486-1.011.73-1.531 1.026-2.177 2.117-4.495 3.836-6.639 2.11-2.63 5.17-4.996 10.216-6.367l.004-.001c3.242-.907 6.439-.165 8.768 1.927 2.33 2.094 3.84 5.586 3.598 10.263-.396 6.528-2.175 12.74-5.72 18.154-3.97 6.054-8.733 11.216-14.395 15.785-1.28 1.034-2.743 2.031-4.264 2.707-1.523.677-3.072 1.018-4.545.788l-.01-.001c-2.139-.292-4.163-.97-5.887-2.12-4.665-3.176-7.698-6.016-10.16-9.18-2.47-3.172-4.376-6.684-6.778-11.238v-.002C2.22 26.37 1.163 23.23.771 19.892c-.393-3.34-.118-6.84 1.282-9.882C5.122 3.396 12.28 1.675 17.938 5.126c3.6 2.238 7.03 6.445 8.597 9.86.072.202.196.412.299.584l.06.1c.097.16.185.306.259.454Z"></path><path fill="#161616" stroke="#000" d="M26.19 30.9h4.61c.297 0 .442.085.52.167.088.09.162.25.181.508.04.53-.165 1.281-.54 1.987-.992 1.8-3.339 2.929-5.567 2.789-1.1-.07-2.141-.447-2.955-1.18-.81-.727-1.43-1.835-1.643-3.431-.043-.396.024-.546.08-.614.064-.077.221-.18.648-.244.416-.062.991-.073 1.776-.059.397.007.826.02 1.303.034a188.288 188.288 0 0 0 1.586.043Zm7.106-8.138.002-.016.001-.017c.035-.585.41-.792.704-.78a.563.563 0 0 1 .412.202c.106.126.205.35.186.723-.02.366-.143.548-.25.636a.552.552 0 0 1-.44.108c-.354-.053-.677-.36-.615-.856Zm-14.867.743-.01.001-.008.002c-.257.047-.55-.103-.739-.482-.178-.356-.185-.78.008-1.094.038-.027.105-.064.214-.114a5.833 5.833 0 0 1 .056-.025c.047-.021.102-.046.145-.067.014-.006.033-.015.054-.027.215.013.37.098.485.217.147.15.25.377.283.635.032.258-.011.502-.105.675a.497.497 0 0 1-.383.279Z"></path></svg>
+  
                      
                 </div>
           
@@ -2404,42 +2448,30 @@ max-height: 80px;"  > </amp-img>
   
         </amp-story-grid-layer>
 
-        <amp-story-grid-layer template="vertical" style="padding:0;" >
+        <amp-story-grid-layer template="fill" style="" >
 
-     
+            <div style="display: flex; align-items: center; justify-content: center;">
 
-        <div style="background-color: white;
-        height: 45vh;
-        padding: 20px 32px;
-        position: absolute;
-        bottom: 0;
+        <div class="author-info" animate-in="fly-in-left"  style="  background-color: #F3D4D3; background-color: black;
+    
+  color: white;
+  box-shadow: 11px 11px 60px #FF5E5E;
+  bottom: 126px;
+  margin-right: 3rem;
+  margin-top: 13rem;
+  padding:
+0 12px 28px ;
+border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
   ">  
-  <div style="display: flex;"> 
-  <div class="iconhead" style=" margin-bottom: 8px;
-  font-weight: 500;
-    font-family: Google Sans,Roboto,Arial,sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    overflow:
-  hidden;
-    padding:
-  14px 12px 0;
-  margin-top: 8px; width: 54%; color: black; line-height: 100%;   font-weight: 500;
-  
-  display: inline-flex;
-  justify-content: center;
+  <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;"> 
+    <div> 
+  <div class="icon-tile-col" style=" margin-bottom: 8px;  display: flex;
   align-items: center;
-  
-  margin-right: 12px;
-  flex-shrink: 0;"> 
-  
-  
-  <span style="display: inline-flex;
-  justify-content: center;
-  align-items: center;
- 
-  margin-right: 12px;
-  flex-shrink: 0;">
+  gap:
+7px;"
+  >
  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 200.000000 200.000000" preserveAspectRatio="xMidYMid meet">
     <metadata>
     Created by potrace 1.10, written by Peter Selinger 2001-2011
@@ -2453,49 +2485,56 @@ max-height: 80px;"  > </amp-img>
     </svg>
 
 
+
+  <span style="font-family: Google Sans,Roboto,Arial,sans-serif; font-size: 20px; ">  Vizflow 
 </span>
-  <span>  Vizflow
+</div>
 
     <span style="font-family: Arial,sans-serif;
     font-weight: 400; font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0; display:block; color: black;">Custom made viziflow for Crucial Todd by:
-    
+    letter-spacing: 0; display:block; ">Custom made  for Crucial Todd by:
+
+  
 </span>
-
-
-  </span>
-
-       
-  
-  
-  
-  </div>  
-  
-
-  <div class="fixed-height-container" style="
-  height: 65px; margin-bottom: 12px; 
-  ">
-  <amp-img class="contain"  src="assets/images/logo-tms.png" width="200" height="122" layout="fill" animate-in="fade-in"  
-     >
-  </amp-img>
 </div>
-  
-  </div>
-     
-  <p style=" text-align: center;
-    color: black; 
+
+
+
+<div style="width:92px; width: 92px;
+height: 92px;
+
+"> 
+
     
-    
-    
-    
-    "> 
-   🔊 We are an early-stage startup  working with very unique and innovative technology. Want to create your own viziflow and become a pioneer in your niche? Let’s bring your vision to life 🔥
+    <div class="img-container-logo">
+    </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+<p style=" 
+color: white; 
+
+
+
+
+"> 
+🔊 We are an early-stage startup  working with very unique and innovative technology. Want to create your own viziflow and become a pioneer in your niche? Let’s bring your vision to life 🔥
+
+
+</p>      
   
-  
-    </p>
-              
-  
+</div>  
+
+
+</div> 
+         
   
           </div>   
   
