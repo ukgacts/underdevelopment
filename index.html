@@ -42,6 +42,32 @@ limitations under the License.
   <style amp-custom="">/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 
 
+a.blue {
+  color: #296cd5;
+}
+
+a.blue, a.blue:active, a.blue:visited {
+ color: #296cd5;
+}
+
+a.grey{
+  color:#727a91;
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.sticky-note{
+  bottom: 2rem;
+  right: 3rem;
+  position: absolute;
+}
+
+
 .video-wrapper figcaption {
 
   text-align: left;
@@ -102,13 +128,13 @@ amp-video {
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="cooperation.amp.html">Cooperation and Interenship</a></li>
     </ul>
   </nav>
-
+<div class="sticky-note"> 
 <h4 > Have something in mind?</h4>
 
 
 
  <a href="https://wa.me/447495132562" title="click to open whatsapp chat" 
- class="whatsup-button h3 my2" style="        text-decoration: none;
+ class="whatsup-button  h3 my2" style="        text-decoration: none;
         
         padding: 10px;
         padding-right: 15px;
@@ -122,9 +148,17 @@ amp-video {
   align-items: center;
  max-width: 180px;
   width: 100%;
-    
+    font-family: Lato, sans-serif;
          transition: background-color 0.3s ease;
         box-shadow: 1px 2px 5px 2px rgba(30,30,30,0.3);
+        
+  font-weight: inherit;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  padding: .7em .8em;
+  text-decoration: none;
+  white-space: nowrap;
+  word-wrap: normal;
        ">
 
 
@@ -134,7 +168,7 @@ amp-video {
  Chat Now
 </a>
 
-
+</div>
 
 </amp-sidebar>
 <!-- End Sidebar -->
@@ -440,10 +474,9 @@ Each piece is a celebration of traditional canal art and the individuality of ev
 </p >
 
             <div class="col col-12 sm-col-6 mb4">
-             <p class="mb0 " style="display: flex;
-  align-items: center;"> 
+             <p class="mb0 flex-container" > 
              <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#FFFFFF"
-             style="margin-right: 8px;"
+             class="mr1"
              
              
              ><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
@@ -456,14 +489,14 @@ Each piece is a celebration of traditional canal art and the individuality of ev
       
               
 
-   <a href="https://www.google.com/maps?q=52.83778,-2.37528" target="_blank" rel="noopener noreferrer" class="mb0 my2"  style="display: flex;
+   <a href="https://www.google.com/maps?q=52.83778,-2.37528" target="_blank" rel="noopener noreferrer" class="mb0 my2 blue"  style="display: flex;
   align-items: center;">
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 5644.173 5644.173" width="30px" height="30px "
-style="margin-right: 8px; 
+style=" 
     width: 34px;
     height: 34px;"
-
+class="mr1"
 >
 	<defs>
 		<path id="a" d="M4300.322 0c-439.439 0-829.828 210.985-1075.081 537.54H403.155C181.42 537.54 0 718.96 0 940.695v4300.322c0 221.736 181.42 403.155 403.155 403.155h4300.322c221.735 0 403.155-181.419 403.155-403.155V2609.086c282.208-412.562 537.54-784.137 537.54-1265.235C5644.173 601.373 5042.8 0 4300.322 0z"/>
@@ -500,7 +533,7 @@ style="margin-right: 8px;
 </svg>
   <span class="h5">Open Knighton Wharf on  <br>
     Google Maps 
-    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#296cd5"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
  </span>
 </a>
 
@@ -508,19 +541,35 @@ style="margin-right: 8px;
             </div>
             <div class="col col-12 sm-col-6 mb4">
         
-              <p class="mb0"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> [Add your phone number]
+              <p class="flex-container mb1">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#727a91"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> 
+            
+            
+            <a class="grey" href="tel:447495132562">  +44.749.513.2562</a>
+            
+            
 
 </p>
-              <p class="mb0"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-                [the.toy.machine.2015@gmail.com]<br></p>
+              <p class="flex-container mb0">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" class="mr1" viewBox="0 -960 960 960" width="24px" fill="#727a91"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+              
+               
+               <a class="grey" href="mailto:the.toy.machine.2015@gmail.com?Subject=Boat Painting%20again">Send Mail</a>
 
-                 <a href="https://wa.me/447495132562" target="_blank" rel="noopener noreferrer" class="mb0 my2" style="display: flex;
+               
+               
+               
+                <br></p>
+
+                 <a href="https://wa.me/447495132562" target="_blank" rel="noopener noreferrer" class="mb0 my2 blue" style="display: flex;
   align-items: center;">
 
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                style="margin-right: 8px; 
+                style=" 
     width: 34px;
-    height: 34px;" x="0px" y="0px" width="293.5px" height="293.5px" viewBox="0 0 293.5 293.5" enable-background="new 0 0 293.5 293.5" xml:space="preserve">
+    height: 34px;" class="mr1" x="0px" y="0px" width="293.5px" height="293.5px" viewBox="0 0 293.5 293.5" enable-background="new 0 0 293.5 293.5" xml:space="preserve">
 <g id="background_1_" enable-background="new    ">
 </g>
 <g id="WhatsApp_Logo_Icon_1_">
@@ -538,7 +587,7 @@ style="margin-right: 8px;
 </svg>
 <span class="h5">  
             Send us a text message  on <br> WhatsApp
-            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#296cd5"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
  </span>
             </a>
                 </div>
