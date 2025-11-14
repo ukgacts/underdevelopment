@@ -21,7 +21,7 @@ limitations under the License.
 <head>
   <meta charset="utf-8">
   <title>Lost Art Painters </title>
-  <link rel="canonical" href="https://ukgacts.github.io/underdevelopment/">
+  <link rel="canonical" href="https://www.lost-art-painters.co.uk/">
   <meta name="viewport" content="width=device-width">
   <meta name="amp-google-client-id-api" content="googleanalytics">
 
@@ -41,6 +41,90 @@ limitations under the License.
 
   <style amp-custom="">/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 
+  :root{
+    --fb-blue: #1877F2;
+    --text-color: #0b2336; /* main text color (editable) */
+    --muted-color: #4b697a; /* follower count color (editable) */
+    --gap: 14px;
+    --padding: 12px 18px;
+    --radius: 8px;
+    --logo-size: 44px; /* change to scale logo */
+    --font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  /* container: transparent background by default */
+  .fb-banner {
+    display: inline-flex;
+    align-items: center;
+    background: wheat;
+    gap: var(--gap);
+    padding: var(--padding);
+    border-radius: var(--radius);
+  
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    /* optional subtle shadow — comment out if you want flat */
+    /* box-shadow: 0 1px 4px rgba(8,20,30,0.06); */
+  }
+
+  .fb-logo {
+    flex: 0 0 auto;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* text block */
+  .fb-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  .fb-title {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .fb-followers {
+    margin: 3px 0 0 0;
+    color: var(--muted-color);
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 6px;
+
+  font-weight: 600;
+  }
+
+  .fb-text {
+    margin: 3px 0 0 0;
+    color: var(--muted-color);
+    font-size: 13px;
+
+  }
+
+  /* small screens: scale down text */
+  @media (max-width:420px){
+    :root { --logo-size: 36px; }
+    .fb-title { font-size: 14px; }
+    .fb-followers { font-size: 12px; }
+  }
+
+  /* optional: clickable behavior */
+  .fb-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--gap);
+  }
+  .fb-link:focus { outline: 2px solid rgba(24,119,242,0.25); outline-offset: 2px; border-radius: var(--radius); }
+
+
+
 
 a.blue {
   color: #296cd5;
@@ -50,8 +134,8 @@ a.blue, a.blue:active, a.blue:visited {
  color: #296cd5;
 }
 
-a.grey{
-  color:#727a91;
+a.no-underline{
+
   text-decoration: none;
 }
 
@@ -280,6 +364,12 @@ creating hand-painted narrowboats that blend heritage, design, and individuality
             We offer a range of traditional narrowboat painting services, including:
           </dd>
           <dt class="col col-10 h3 mb1">Full and partial boat repaints </dt>
+           <dd class="m0 col col-2 m0 mb1 self-center right-align">
+            
+        
+           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg>
+        
+            </dd>
       
           <dd class="col col-12 m0 mb4">
             From full hull repaints to cabin tops, panels, and decorative detailing, we ensure a smooth, durable finish that reflects the pride you have in your boat.
@@ -290,59 +380,69 @@ creating hand-painted narrowboats that blend heritage, design, and individuality
 
           
           </dt>
+          
+             <dd class="m0 col col-2 m0 mb1 self-center right-align">
+            
+        
+           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg>
+        
+            </dd>
+
 
  <dd class="col col-10 m0 mb1 self-center left-align">
           Using hand-painted techniques — never vinyl — we can create everything from classic name panels and scrollwork to modern styles that still respect the boat’s heritage.
   
   
   </dd>
-             <dd class="m0 col col-2 m0 mb1 self-center right-align">
-            
-        
-            <amp-img src="./img/boats/lettering.webp" width="150" height="150" class="mb2" alt="Happy Hour Monday through Friday 5 PM" layout="responsive"></amp-img>
-  
-        
-            </dd>
-
          
         
           <dt class="col col-10 h3 mb1">Roses and castles artwork</dt>
+        <dd class="m0 col col-2 m0 mb1 self-center right-align">
+            
         
+           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg>
+        
+            </dd>
           <dd class="col col-10 m0 mb4">
             We offer custom-painted roses, garlands, castles, and scenic panels, tailored to your colour scheme or style preference. 
           </dd>
-                       <dd class="m0 col col-2 m0 mb1 self-center right-align">
-            
-        
-            <amp-img src="./img/boats/boat_inside.jpg" width="600" height="450" class="mb2" alt="Happy Hour Monday through Friday 5 PM" layout="responsive"></amp-img>
-  
-        
-            </dd>
+                        
 
           <dt class="col col-10 h3 mb1">Coach lines, scrollwork, and detailing</dt>
-       
-          <dd class="col col-12 m0 mb4">
+        <dd class="m0 col col-2 m0 mb1 self-center right-align">
+            
+        
+           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg>
+        
+            </dd>
+          <dd class="col col-10 m0 mb4">
            We hand-paint coach lines, scrolls, corners, and border designs, using fine brushes and steady craftsmanship to achieve sharp, clean lines that highlight your boat’s shape and structure.
           </dd>
 
           <dt class="col col-10 h3 mb1">Restoration and repainting of historic narrowboats</dt>
+             <dd class="m0 col col-2 m0 mb1 self-center right-align">
             
+        
+           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg>
+        
+            </dd>
           <dd class="col col-10 m0 mb4">
             We take great pride in restoring traditional narrowboats and historic working boats, respecting the methods and materials of the original builders.
           </dd>
 
-           <dd class="m0 col col-2 m0 mb1 self-center left-align">
-                    
-            <amp-img src="./img/boats/boat_inside.jpg" width="450" height="450" class="mb2" alt="Happy Hour Monday through Friday 5 PM" layout="responsive"></amp-img>
-  
-        
-            </dd>
+         
 
               <dt class="col col-10 h3 mb1">Custom designs and bespoke commissions</dt>
-       
-          <dd class="col col-12 m0 mb4">
+        <dd class="m0 col col-2 m0 mb1 self-center right-align">
+            
+        
+           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg>
+        
+            </dd>
+          <dd class="col col-10 m0 mb4">
            We love projects that mix heritage and creativity, producing something that’s uniquely yours while rooted in traditional canal painting values.
           </dd>
+          
         </dl>
 
 
@@ -460,7 +560,7 @@ Each piece is a celebration of traditional canal art and the individuality of ev
   <div class="mxn3">
     <dl class="clearfix ">
 
-      <dt class="h5 mb2 block regular">Knighton Wharf </dt>
+      <dt class="ml3 block regular"> <small>Knighton Wharf   </small> </dt>
         
           <dd class="m0"> 
 <amp-img src="./img/boats/knighton.jpg" width="800" height="200"  alt="Key Lime Pie" layout="responsive" tabindex="0"></amp-img>
@@ -537,33 +637,31 @@ class="mr1"
  </span>
 </a>
 
-
-            </div>
-            <div class="col col-12 sm-col-6 mb4">
-        
-              <p class="flex-container mb1">
+        <p class="flex-container mb0 ">
                 
-                <svg xmlns="http://www.w3.org/2000/svg" class="mr1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#727a91"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> 
-            
-            
-            <a class="grey" href="tel:447495132562">  +44.749.513.2562</a>
-            
-            
-
-</p>
-              <p class="flex-container mb0">
-                
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" class="mr1" viewBox="0 -960 960 960" width="24px" fill="#727a91"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" class="mr1" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
               
                
-               <a class="grey" href="mailto:the.toy.machine.2015@gmail.com?Subject=Boat Painting%20again">Send Mail</a>
+               <a class="no-underline" href="mailto:lostartboatpainters@gmail.com">lostartboatpainters@gmail.com</a>
 
                
                
                
                 <br></p>
+            </div>
+            <div class="col col-12 sm-col-6 mb4">
+        
+              <strong class="flex-container mb1">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr1" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> 
+            
+            
+            <a class="no-underline" href="tel:447495132562">  +44&nbsp749&nbsp513&nbsp2562</a>
+            
+</strong>
 
-                 <a href="https://wa.me/447495132562" target="_blank" rel="noopener noreferrer" class="mb0 my2 blue" style="display: flex;
+
+                 <a href="https://wa.me/447495132562" target="_blank" rel="noopener noreferrer" class="mb0 my2 no-underline" style="display: flex;
   align-items: center;">
 
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -573,9 +671,9 @@ class="mr1"
 <g id="background_1_" enable-background="new    ">
 </g>
 <g id="WhatsApp_Logo_Icon_1_">
-	<g id="Icon_xA0_影像_1_">
+	<g >
 		
-			<image overflow="visible" width="587" height="587" id="Icon_xA0_影像" xlink:href="data:image/png;base64,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" transform="matrix(0.5 0 0 0.5 0 0)">
+			<image overflow="visible" width="587" height="587"  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkwAAAJOCAYAAABFrFjIAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAIEdJREFUeNrs3QmUZFWdJ+CXWVl7 scgiu1Y7LFXsqIAKKK0FiLi1jApSsjh267gcB9RBxenTM624nWmn8fTY47TK3nTruCI7jbaAgCJQ YLG4sJXsUEJBLVlLzP9mvKyMinoZEblExvZ95/zyZWVGRkbeCA6/c9+N+7IMAAAAACaizxB0v9PW /7eBOMzMMys/zogM5P9Ox+k1Pu/Pb5/MrrjrmQWvoXS7aUYdNrMmssEwtEwa+8GKf6+NrMs/X50f 1+e3KeXP12B+m+HP1+bHys9X5T+/+tvT/rZkmBUm2qf8pPIyJzI3skV+HP58Tl50ZucZ/nxmVWGa lRehgfz7A3XKU3/+s1n+9azi86LC1O+ZgsLC5H+orbO+oDCtryhMpYpStWGUwlT0+epRsqrg3ykv VOT5KFmrPDUKE+MrRKmYbBfZJrJ1nq0qytG8PNWFaV5emKrL0nDxAaD5pbhWgVqZ5/n8uCL/fEWe 5yLPRpZH/pQfl0epMjOpMPV8OUqFZpfIrpGdIy/OU12Ytq4oR3M8bwBdY11FYVqRF6XhPBN5KvJ4 5MnII5E/Rh6NErXO0ClM3VyQUvF5aWR+ZLe8KO2al6aU7fNyBADJ+rwsVRamhyPL8uMDkYec2lOY Or0gpRmk/5DnzyrKUjq+JLKtUQJgHCXqsYrClPJg5P7I79LnZqAUpk4oSTvGYUFk97wo7Z4nFSWz RwBMtrRg/fG8OKXC9Ps8v43cG+VpuSFSmNqhIKUxTLNFC/OiNJxUlnYxxgBMsTS79GBenu6pyN1R nh43PArTVBeltEh738h++TEVpr0ys0gAtJfHKkrTXZE70zHK0zOGRmFqVklK71I7MHJQXpRS9ols aXQA6ABP5qUp5Y7I7Xl5WmNoFKYJOXX9Z9MYpdNrr8zL0ivSsS/r287oANCpSllpWV6Ybo3clo7n TvvcMiOjMI21KKUdqw+IHJonFaY9M7tYA9Bd0s7lSyO/itycZ2mUp/WGRmEavSit+2w67faqyGvy 4yExSmaTAOh+paF9nm7KS9MNqUSdO/C5QQOjMFUWpbQO6dWR10aOiBycbXrdNADoFSvy4vTveW6J 4rRaYertopQ2lzw8sigvS2mN0nT/rQDA0DXwUnH6WeTayM1RnNYqTL1VlFIpOjQvSovyz12kFgA2 l2aXro9ck+e2KE49dVHgnitMUZTS35z2TXpj5JjIYZlTbwDQiHSq7qeRqyOXR2n6ncLUnWVpp7wo HZeVZ5W28toHgDFL+zldGbk0lacoTl2/CWZPFKYoSjPj8IbIWyLHZuWL3wIAE5N2D78sL04/j+LU tRf97frCFGUpXa7kHZG3Z+V3vnlnIABMnlSS0hYE30+J0vSQwtRZRWleHN4U+Yv86PIlANA8T0V+ FPle5JooTl11uZWuLExRlhbE4YTIOyN7ew0DwJQoZeVLrXw3ckmUpgcVpvYsSmmt0hvzspTWK831 2gWAKfenrDzTdEnkum5Y29Q1hSnK0s5xOClyYuQgr1UAaKk023RjXprSbNNTClPry9Ih6ZCVZ5Ze 5DUKAG3j8cjFkW9HabpTYWpNUUqn4N4aOS1ydGSa1yUAtJ10Ad8fR74VuaoTT9F1bGE6Zd1nt83K s0rv67OwGwDaXinLbonDuZGLzhv43HMKU9PL0lm7x+GvsqGZpb7tvAQBoGNq0yPx4ZuR/3vewOcf VpiaV5ZeHYf/nJW3DHANOADoPC9ELor8Q5SmJQrT5Bal/qx8sdyPZeX1SnbsBoDOtT7yw8g5UZp+ pjBNTlmaHofjI6dHDvEaA4CucV3k7yKXRXHaoDCNvyzNjsPJWXlmaaHXFQB0nbQ7+Fcj/xqlaa3C NPaylHbq/svIGZHdvJ4AoGvdF/mfkfOiNLXddejatjCdsvasLbLy4u7T41Hu6HUEAF2ulD2Yl6Z/ Om/651cpTPXL0lZx+HBWXrNk2wAA6B1p24GvRL4RpWmlwjR6WUozSx/Ly9I2XjcA0HMei3w58vUo TasVps3LUlqz9NHIJ5UlAOj50vS5rHx6ruVrmtqmMEVZSu+G+1DkzMj2XicA0POW5aXpW1GaWvru ubYoTFGW0j5LH4ycFdnB6wMAyKWF4H8duTBKU8v2aepvg7KUHsOJWXlmSVkCACq9NPKZyHGtfBD9 bTAQx+UDsYvXBABQYK/IX5+y9qzDW/UAWnpK7uS1QxfSPScexCu9FgCAWkpZdk0cPn7+9Km/YG/L CtPJaz+zexy+Fg/hjV4CAEBDlSnLvhM54/zpZy/r+sIUZWnbOHwp8r6sQy4ADAC0hfWRcyJ/E6Xp uan6pVO+hinK0qysvNfSYmUJABijaZH3p0SnGOjawhTeGflIZKbnHAAYh3RVkDMib56qXzilMzzR BA+Nw7cie3uuAYAJujVy2vnTz76zawpTlKVd4/D1qWyDAEDXuyTy0ShNTzXzl0zJKbkoS+n0W7qg 7rGeVwBgEr0j8sFmr2eaqjVMb8vKC7SmeV4BgEk0IyuvjT6qmb+k6afkovEtjMPFkQM9pwBAk9wQ WXz+9LMfaMadN3WG6eTBz8zLStknlSUAoKlK2Wsi/yW6R1Pehd/s/QveFXl3eWNOAICmSWfNTo1c H/luM+68KaLhLYjD9yILPYcAwBRJWw0cf/6Msx+czDttyim5KEtpN+8zlCUAYIq9IvKR6CKTehat KYWplGXHRU7wnAEAUy06yGmR10/mfU76Kbn3Dn56xzj8KO76YE8ZANCi2nRdfHjnBTO+8PRk3Nuk TldFWUoF7LTIKzMrvQGA1nlt5D2Rr03GnU32Kbn9Ih/MpvgadQAAVdJm2R997+Cnd2+rwhQPaHoc To+8xHMEALSBPSIfjo4y4SuNTOYM0xGR4z03AEAbWZwNLRVqg8IUzW1OHD4e2cLzAgC0ke0ip+dn wlpbmMLRkTd4TgCANnRcVl4EPm4TXpwdjW3LOFyalU/JAQC0o8sjx18w4wurxvPDkzHDdGzk1Z4H AKCNpY0sjxzvD09ohum9g5+eF4crIod5HgCANpc6y9svmPGFNWP9wYnOMC2KHGr8AYAOcGTk8PH8 4LgL0+LBT88oZdlHskneLRwAoElmpe6yeBz7Mo2/7JSGZpYOK9nTGwDoFKWhs2MHRH7d9MK0eM2n oiaVPpBlfbNcMg4A6CDzosO8P44fGssPjWt+KArTXnG4MbKNcQcAOsxjkUMvnPnFhxr9gfGuYTpB WQIAOtSOkXeM5QfGPMO0eM2n0uVPbo4sNN4AQIdKa5gOu3DmF1c3cuPxzDClHb33Ms4AQAfbP3Jw ozceT2E6NZu8a9ABALRCeuPbKY3eeEyn5Bav+dQucViSWb8EAHS+tPh7/wtnfvHJejcc60zRG5Ul AKBLpMXfRzZyw4YL0+I1n0q3PdHYAgBdpKFuM5YZppdlrhsHAHSX1+VLjianMJXKp+PmGVcAoIts Ex3n9fVu1NClUU4auhRK9jZXQQEAutBfRC6odYMGZ5hKO0cOMZ4AQPcpHXHSmjO3rXWLRi++++eR LTNX2gUAus92kcMiPxrtBo3NMJWyNxtLAKBr1ek6dTeuPGn1mXPjcF9kZ6MJAHSp30f2vmjWlwaL vtnIDFO61spOxhEA6GLzsxrXym2kMB2TjfESKgAAHWZaZNFECtMiYwgA9ICjRvtGzZmjk1afma4b d3829A45AICu9lRk/kWzvvRC9TfqzTC9XFkCAHpE2l5gn6Jv1CxMpQav4AsA0A2i+7yu6Ov1Nq48 3FaVAEAPOSLyleovjrqG6T3l/ZcejrzI2AEAPeLRyPyLq/ZjqnFKrrSnsgQA9JbSjpH51V+tdUru Va4dBwD0mHT27eCsfJWTjWot+j7EmAEAPejQ6i/UKkwHGi8AoAcdVP2FwkXf71n1X2fH4fH47hbG DADoKaXsyfi4y8Wzv7x2+EujrWF6SWQLS5gAgB6UNrDcIbJs+AujnZLbw1gBAD0qnYHbs/ILoxWm +cYKAOhhL6tbmEpVNwIA6CWlqsmj0dYwzbd8CQDoYZsUptFOye1mnACAHrZrA4WptItxAgB6V2mn yn9tdkruxFWfnBmHbV0WBQDoYTtU/qNohinKUjbDOAEAPWyLE1d9cm6twrSTMQIAelzqSNvXKkwv NkYAACOdqKgwbW98AACyHRUmAIDadhi1MJVKChMAQHSijYWpaKfv7Up2FAAAqLmGaRvjAwAw0okK ClNpa+MDADDSiYpOyW1tl28AgGxjYeqv9U0AAIVJYQIAGFthOmHlJ9Ipui2MDwDA6DNM6SJzA8YH ACCbc8LKT8wsKkxOxwEAlPVFttysMJWy7EXGBgBg025UffptaxsKAABstFX60F/0RQAARitMpdI8 4wIAsGk3qj4lNy9z5V0AgGFz0of+zQoTAAA1C5NNKwEAqrqRwgQAMLp5RYVptnEBANio8JTcHOMC AFCjMJXK15IDAKDcjYaWK1VvKzDHpgIAABtZwwQAUMesgsJUmmFcAAA2dqOhwjSweYtyUg4AYKQb bX5KzgwTAMCwUrkbDRR9EQCAITPTh+oZplnGBQBgoxlFhWm6cQEA2GjzNUwlM0wAAJUGNn6oMM17 5AAARrpR+uCUHADA6Cz6BgCoY3pRYeo3LgAAm6paw2QFEwBAhcIZJgAARmy6humdz5+uPAEAbKrq XXIlC74BAIpUrmGabgkTAECNwqQrAQAUs24JAEBhAgBQmAAAmqpi0bdVTAAARcwwAQAoTAAAChMA gMIEANBKNq4EAKjDDBMAQB0j2wqYYgIAKGSGCQBAYQIAmBg7fQMA1GGGCQBAYQIAUJgAAJrKxpUA AHWYYQIAUJgAABQmAACFCQCglSquJWfZNwBAETNMAAAKEwCAwgQA0FQ2rgQAqMMMEwCAwgQAoDAB AChMAACtNLJxpWXfAACFzDABANRRcWkUgwEAULMw6UsAAMWckgMAUJgAABQmAACFCQCglezDBABQ hxkmAACFCQBAYQIAaCobVwIANFqYNCYAgGJOyQEAKEwAAAoTAEBT2bgSAKAOM0wAAAoTAMDE2IcJ AKAOM0wAAAoTAIDCBADQVC6NAgDQcGHSmAAACjklBwCgMAEATIx9mAAA6jDDBACgMAEAKEwAAAoT AIDCBADQxip2+vY+OQCAImaYAAAUJgCAibFxJQBAHWaYAAAUJgAAhQkAQGECAGilkX2YLPsGAChk hgkAQGECAJiYkX2YnJEDAChkhgkAQGECAFCYAAAUJgAAhQkAoI3ZuBIAoA4zTAAAdYzsw2QsAAAK mWECAKhjZA2TKSYAgEJmmAAAFCYAAIUJAKCp7MMEAFCHGSYAgDrswwQAUIcZJgAAhQkAQGECAFCY AABayaVRAAAaLkwaEwBAIafkAADqsA8TAEAdZpgAABQmAACFCQBAYQIAUJgAANqYfZgAABotTCV9 CQCgkFNyAAAKEwCAwgQAoDABAChMAAAKEwBA57IPEwBAo4VJXQIAKOaUHABAHSOn5EwxAQAUMsME AKAwAQAoTAAAChMAQCvZhwkAoNHCpC4BABRzSg4AQGECAFCYAACayk7fAAB1mGECAFCYAAAmxj5M AACNFiZ1CQCgmFNyAACjG1SYAABqW60wAQDUVlKYAAAaoDABANRhp28AgIYLk8YEAFC7MKlLAADF rGECAFCYAAAUJgAAhQkAQGECAFCYAAA6l20FAAAaLUwqEwBAvcKkLwEAFLKGCQBAYQIAUJgAABQm AACFCQCgjdmHCQCg0cKkMgEAFHNKDgBAYQIAmBg7fQMA1GGGCQBAYQIAUJgAAJrKPkwAAI0WJpUJ AKCYU3IAAAoTAIDCBACgMAEAtJKdvgEA6jDDBABQh32YAAAaLUwqEwBAMafkAAAUJgAAhQkAQGEC AFCYAAAUJgCAzjWyD5NdBQAAahcm+zABABRzSg4AQGECAFCYAAAUJgAAhQkAoI2NbCtgLAAACplh AgCowz5MAAANFyZ9CQCgkFNyAAAKEwCAwgQAoDABALSSfZgAAOowwwQAUId9mAAA6jDDBACgMAEA KEwAAE3l0igAAHWYYQIAqMM+TAAAdZhhAgCowz5MAAB1mGECAFCYAAAUJgAAhQkAQGECAGhjI/sw eZMcAEAhM0wAAAoTAMDE2LgSAKAOM0wAAAoTAIDCBACgMAEAtNLIPkzGAgCgkBkmAACFCQBgYkb2 YXJtFACAQmaYAAAUJgAAhQkAQGECAFCYAADamI0rAQDqMMMEAKAwAQBMzMjGlU7KAQDUKUz6EgBA IafkAAAUJgAAhQkAoKnswwQAUIcZJgAAhQkAYGLswwQAUIcZJgAAhQkAQGECAGgql0YBAGi0MOlL AADFnJIDAFCYAAAUJgCAprJxJQBAHWaYAAAUJgAAhQkAQGECAGglG1cCADRamDQmAIBiTskBAChM AAATY+NKAIA6zDABAChMAAAKEwBAU9mHCQCgDjNMAAAKEwCAwgQA0FQVl0axigkAoIgZJgAAhQkA QGECAFCYAABaycaVAAB1mGECAFCYAAAUJgAAhQkAoJVGdvq27BsAoJAZJgCAOiquJWcwAACKmGEC AKjDxpUAAHWYYQIAUJgAABQmAACFCQCglWxcCQBQhxkmAACFCQBAYQIAaCobVwIANFqYNCYAgGJO yQEAjG6DwgQAUNua6sK03pgAAGxiMH2o3LhyjTEBANjcxhmm2xb8aK3hAACoUZgAANjMYFFhWmdc AAA2GlqyNFD5lVL5iwPGBgBgyNCSpeoZpkHjAgCw0eqiwrTauAAAbGSGCQCgjs3XMGUlM0wAANWF yQwTAMDoqnf6Tuz2DQBQYVX6UD3D9LxxAQDYqPBdciuNCwDARivSh+qNKxUmAIARL6QP/UUtCgCA ISuLCpM1TAAAVd2oujC9YFwAAGoXJmuYAADqFCan5AAARhSuYbLoGwBgxNBypapryZWckgMAGFF4 Su454wIAsGk3qi5MfzIuAACbFqbqnb4VJgCAEc+mD2aYAACKrY2sUpgAAEa3Ysnel24oKkzpXXKD xgcAYGQiaZPClLco75QDAMiy5YWFqbpNAQD0sKcVJgCA2jbOMA1s/r3ScuMDAFD7lNwzxgcAYKQT FRWmJ4wPAED25PAnm52SK5Wyx40PAMBIYSqaYVKYAAAUJgCAup6oVZgeMz4AALULkxkmAKDXpQvv 1ty48qnIeuMEAPSwp+/c5ydrRi1M8c10AV7XkwMAetkfK//RP8qNrGMCAHrZI5X/GCi+Tenh+LDQ WAEAPerhyn+MNsP0gHECAHrYJl2ocIappDABAL3t/sp/jDbD9AfjBAD0sD80UpjuNU4AQI9al1Wd bRutMP0+ssp4AQA96NHI8sov9I12y33vetPdcVhgzACAHnPFXftedmzlF/pr3Pg24wUA9KBfV3+h VmG6xXgBAD3olrEUppuMFwDQY9JFd28dS2FamrmmHADQWx7Mqi6LkvTV+ol97zr2hji8xtgBAD3i orv2vXxx9Rf76/zQz40bANBDCrvPQK2fKGXZz+JwprEDAHrAhtEKU70Zpl9FXjB+AEAPWJaVN+8e c2F6KnKX8QMAesCNv9n38jVjLkzxQ6U4XGP8AIAecO1o3+hv4IevNH4AQJcbjFw3kcJ0e+Rx4wgA dLF7Ig+MuzD9Zt/LV8TheuMIAHSxq6PzrB/tmwMN3UUp+3F8PN5YAgBd6rJa3+xv8E7+LbLCWAIA XShdCuWXtW7Q2AxTVkr7EqQL0R1pTAGALnPtb/a7oubEUEMzTHEnaXuBHxhPAKALfa/eDQYavadS +dze5yNzjSsA0CUezRq4dm7/GO4wbRV+i3EFALrIlUv3u+LpSStMcWfpgnSXGFcAoEukJUf/3MgN +8d4x5dHlhtfAKALPBD5RTMKU3q33LXGFwDoAt9fWufdceMqTEvL75Y7N7LBGAMAHWx15KJGb9w/ jl+QVpLfZ5wBgA6W3sh2Z9MK09L9rnguDv9inAGADnZudJq1TStMufRuOYu/AYBO9EBWfiNbw8Zb mO4d6y8CAGgTlyzd74rHxvIDfeP9TXvfecwRcbgqMsu4AwAd4pnI4Uv3u/LusfzQwLh/XSm7OT5e H1lk7AGADvGTyD1j/aG+ifzGhUuOeWscvhuZbvwBgDaX9lw6+u79r7xprD/YP8FfnDax/IXxBwA6 wJWRX43nBydUmKKhvRCHr0XWeg4AgDaWOss50V3WTXlhqmhr13seAIA2dlnkpvH+cN9kPIKFS455 cxy+k3nHHADQftLekW8az9qlYf2T9EDSWqarPR8AQBv6f5FfTuQO+ibrkSxccszr4vDDyFaeFwCg TTwSOfbu/a9cMpE76Z/EB3RjVj4tBwDQLr6ZjeEiu6Ppm8xHtHDJMfvE4dLIfM8PANBiaVbpuLv3 v3LZRO9oMmeY0jYDv4nD/45s8BwBAC00GPnqZJSlSS9MufOyCbxtDwBgEqQ3o31vsu6srxmPcOGS o98ShwsyC8ABgKn3aORdd+9/1aTtE9nfpAeaNrO80PMFAEyxtCzo/2TlN6NNmr5mPdoFS47ePStP he3nuQMApsjPI+++Z/+rHu2IwpSXpsVx+HpknucPAGiyJyOnRFm6fLLvuL/JDzzNMDk1BwA02/rI NyLXNOPO+5r96BfcMXRq7uLIwZ5LAKBJ0rviTr3ngKse6cjClJemt8fhnyLbej4BgEn2UOTkKEs/ a9Yv6J+iP+SyrLyWaa3nFACYRKsi/ysrL/Zumr6p+msW3HH0DnH4h8jxnlsAYJKkM1ifuOeAq57t isKUl6aXx+Hbkf09vwDABKWNKd8XZem3zf5FfVP9l0Vpelcczons4HkGAMbp/sgHoixdPRW/rL8F f+D3s/K5xpWeawBgHJ6JfCVy7VT9wikvTNEE08Lvf8zKp+bWe84BgDFYk5XfSHZedIoNU/VL+1r1 1y644+iXxuHvI2/z3AMADSilohQ5M8rSE1P5i/ta+VcvuOOoV2Tl03OHew0AAHVcmg29I+7qe6f6 F/e1+i/f646jFsXh7zIX6QUARpfeEXfGvQdc/ctW/PL+NhiAtGDrb7PyancAgGp3Rv57q8pSWxSm +OPT+ch0kd6zIw97TQAAFe7LyhMr17byQfS1y2jsdcdR0+Pwl5GzIjt7fQBAz/tD5G8iF997wNUt fWd9XzuNSpSmWXH4QOQzkRd7nQBAz3ow8j8i50dZWtfqB9PXbqMTpWlOHD4U+XhkR68XAOg5D0W+ EPlmlKW17fCA+tpxlKI0zY3DX0U+kTk9BwC9JJ2G+1LkvChLa9rlQfW162hFaZodh/fnpeklXj8A 0PXSAu8vRi5sl5mlti9MQ6Xp9qE1Tadk5dNze3gdAUDXSlsHfDlyyb0Htn7NUkcVprw0zYjDuyJn RA7yegKArnND5KuRH0RZasvrzPZ1wihGaUr7Rb05cnrkSK8rAOgKaS/GK7LyFT+ujbJUatcH2tdJ oxrFKZWlj0XeEpnmdQYAHWsw8t3I30dRuqXdH2xfp41ulKYD4vDhyHsic73eAKDjLI+cF/nHKEv3 dsID7uvEUY7SlN41l95B958y2w4AQCdJ1479RuRbUZae6JQH3depo73X7Yu2jMNJkVMjh3j9AUDb S4u7vxn5l3sPvGZlJz3wvk4e9T1vXzQQh6Pz0vTWyEyvRQBoO6si3498O/Jv9x14zYZO+wP6uuFZ iOK0T16a0ozTTl6XANA2Ho5cEDkvitJ9nfpH9HXLsxGlads4vDtyYuSwbvrbAKADpVmkn0b+OfKd KEvPdvIf01WlIkpT2mrgzyMnRN4ReZHXKwBMuSez8pYBqSzd0Imn4Lq6MFUUp/QuujTb9B8jB2dm mwBgKqRi9IvIdyL/GkXp0W75w7q2SERpSgvAX5+VZ5reFtne6xgAmuaRyA+z8uLu66IsreumP67r Z16iOO0Wh7fnxenwyIDXNABMmrRj90/zovSDKEqPdeMf2ROnqvK1TaksHZeVr0m30OsbACZsSeQn kR9Hbu6GtUo9XZgqitNWcTgm8qY8TtMBwNg9mhelyyLXRFFa0e1/cE8uho7iND8rzzYtysrvqtvK ax8A6nomcl0qSZFLoygt65U/vGffPRalKf3tB+SlKeWIyBz/LQDAZp6P/HtelFLuirJU6qUB6Pm3 2+frm9K16N4QeW3kNZG5/tsAgCydarsxKy/qvjby6yhK63txIOxPNFKcZsThlZHXZeXZpldlNr4E oDctz8oXyv15Vp5ZujWK0tpeHhCFafPiND0OB2XlmaZUmg6NzDcyAPSA+yM3RW7OC9Pt3bafksI0 2cXptqE1TntVlKaXR/aPzDI6AHSRVZE7I7dWlKX77juot9YoKUyTU552iMMr8tJ0UJ75xg+ADpXK UJpNuj3y68htkV9FSXrC0ChME7bHbW9Ip+sW5oVpv4rsZHQA6ABpF+4789yRF6alvz3oWqfdFKam lact47BPXpj2jSzIs6txBaBNpJmkP0buidydylFelu6KkvSs4VGYpro8bZOVZ56GS1Na+7R75GWR mUYIgCm0JvJA5Ld5UUq5NxWmKElPGx6FqV3K07w47JkXppQ9In+WZ5fINKMEwCRK1297JC9Jv8vz +7ww3RclaYUhUpjavTz1x2G3rDzTlArTS7PyYvGUXfMCZQYKgLFYmxekhyIP5kXpgYrC9HCUpA2G SWHq5AI1PS9K8/MitWtFcdo58uI8ti4AIElv+X8qT1qLtKziOFyYUkEaNFQKUzcXqDT+21cUph3y wrRtVt5lPGXrSDrNt2V+3CI/OrUH0B2FKF2n7bn8mE6fPVNRkp7O82RWnlVKRekJM0gKE+UiNTcv S9vkhWluRWGqLk4pcyoyO8+siuPMPDOMLkDTrI4M5sdVFceUlZEX8s9fyItRdVEazvLhwhTFaKVh VZiYeKmal5epuXk5Gi5Ns6pK03BZmllRoGZUfQ2AxovRmooM5sfKr6+qKk3DhWllnqFyZP8jhYn2 LVqzK4rScGmabWQAGlKqKEbDRWlNFJ81hgYAAAAAGN3/F2AARC0jccnxSFwAAAAASUVORK5CYII=" transform="matrix(0.5 0 0 0.5 0 0)">
 		</image>
 	</g>
 	<g id="WA_Logo">
@@ -587,11 +685,38 @@ class="mr1"
 </svg>
 <span class="h5">  
             Send us a text message  on <br> WhatsApp
-            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#296cd5"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
  </span>
             </a>
+
+               <a class="fb-banner fb-link" href="https://www.facebook.com/LostArtPainters" target="_blank" rel="noopener noreferrer" aria-label="Find us on Facebook (opens in new tab)">
+    <!-- Inline Facebook "f" logo SVG (flat style, matches FB brand colors) -->
+    <span class="fb-logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="100%" height="100%" role="img" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <rect width="24" height="24" rx="4" fill="#1877F2"/>
+        <path d="M15.12 8.5h-1.37c-.35 0-.82.18-.82.9v1.05h2.2l-.29 2.21h-1.91V20H10.7v-6.29H8.9v-2.21h1.8V9.65c0-1.98 1.16-3.07 2.86-3.07.83 0 1.55.06 1.69.09v2.83z" fill="#fff"/>
+      </svg>
+    </span>
+
+    <!-- Text area -->
+    <span class="fb-text">
+      <span class="fb-title">Lost Art Painters</span>
+      
+        <span class="fb-text">Join us on Facebook</span>
+
+
+        <span class="fb-followers">909 followers</span>
+    </span>
+  </a>
                 </div>
   </div>
+
+
+
+
+
+
+
 
       </article>
   </main>
